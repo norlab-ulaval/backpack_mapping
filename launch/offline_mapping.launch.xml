@@ -24,8 +24,8 @@
         <param name="real_time" value="true"/>
     </node>
 
-<!--    <node  pkg="pointcloud_motion_deskew" exec="pointcloud2_deskew_node" name="pointcloud2_deskew_node" output="screen" >-->
-<!--        <remap from="input_point_cloud" to="/velodyne_points" />-->
-<!--        <remap from="output_point_cloud" to="/velodyne_points_deskewed" />-->
-<!--    </node>-->
+   <node  pkg="pointcloud_motion_deskew" exec="pointcloud2_deskew_node" name="pointcloud2_deskew_node" output="screen" >
+        <remap from="input_point_cloud" to="/velodyne_points" />
+        <remap from="output_point_cloud" to="/velodyne_points_deskewed" />
+    </node>
 </launch>
